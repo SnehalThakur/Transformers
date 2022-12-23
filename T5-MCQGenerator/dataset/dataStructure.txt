@@ -1,0 +1,86 @@
+The term DSA stands for Data Structures and Algorithms. As the name itself suggests, it is a combination of two separate yet interrelated topics – Data Structure and Algorithms.
+Introduction to Data Structures and Algorithms (DSA)
+Topics
+A data structure is defined as a particular way of storing and organizing data in our devices to use the data efficiently and effectively. The main idea behind using data structures is to minimize the time and space complexities. An efficient data structure takes minimum memory space and requires minimum time to execute the data.
+Algorithm is defined as a process or set of well-defined instructions that are typically used to solve a particular group of problems or perform a specific type of calculation. To explain in simpler terms, it is a set of operations performed in a step-by-step manner to execute a task.
+The first and foremost thing is dividing the total procedure into little pieces which need to be done sequentially.
+The complete process to learn DSA from scratch can be broken into 4 parts:
+Here comes one of the interesting and important topics. The primary motive to use DSA is to solve a problem effectively and efficiently. How can you decide if a program written by you is efficient or not? This is measured by complexities. Complexity is of two types:
+Both of the above complexities are measured with respect to the input parameters. But here arises a problem. The time required for executing a code depends on several factors, such as: 
+So how can we determine which one is efficient? The answer is the use of asymptotic notation. 
+Asymptotic notation is a mathematical tool that calculates the required time in terms of input size and does not require the execution of the code. 
+It neglects the system-dependent constants and is related to only the number of modular operations being performed in the whole program. The following 3 asymptotic notations are mostly used to represent the time complexity of algorithms:
+Rate of Growth of Algorithms.The most used notation in the analysis of a code is the Big O Notation which gives an upper bound of the running time of the code (or the amount of memory used in terms of input size).
+To learn about complexity analysis in detail, you can refer to our complete set of articles on the Analysis of Algorithms.
+Here comes the most crucial and the most awaited stage of the roadmap for learning data structure and algorithm – the stage where you start learning about DSA. The topic of DSA consists of two parts: 
+Though they are two different things, they are highly interrelated, and it is very important to follow the right track to learn them most efficiently. If you are confused about which one to learn first, we recommend you to go through our detailed analysis on the topic: What should I learn first- Data Structures or Algorithms?
+Here we have followed the flow of learning a data structure and then the most related and important algorithms used by that data structure.
+The most basic yet important data structure is the array. It is a linear data structure. An array is a collection of homogeneous data types where the elements are allocated contiguous memory. Because of the contiguous allocation of memory, any element of an array can be accessed in constant time. Each array element has a corresponding index number. 
+Array Data Structure
+To learn more about arrays, refer to the article “Introduction to Arrays“.
+Here are some topics about array which you must learn:
+Related posts:A string is also a type of array. It can be interpreted as an array of characters. But it has some special characteristics like the last character of a string is a null character to denote the end of the string. Also, there are some unique operations, like concatenation which concatenates two strings into one.
+String Data Structure
+Here we are providing you with some must-know concepts of string:
+Related posts:As the above data structures, the linked list is also a linear data structure. But Linked List is different from Array in its configuration. It is not allocated to contiguous memory locations. Instead, each node of the linked list is allocated to some random memory space and the previous node maintains a pointer that points to this node. So no direct memory access of any node is possible and it is also dynamic i.e., the size of the linked list can be adjusted at any time. To learn more about linked lists refer to the article “Introduction to Linked List“.
+Linked List Data Structure
+The topics which you must want to cover are:
+Related posts:A matrix represents a collection of numbers arranged in an order of rows and columns. It is necessary to enclose the elements of a matrix in parentheses or brackets.
+For example:A matrix with 9 elements is shown below.This Matrix [M] has 3 rows and 3 columns. Each element of matrix [M] can be referred to by its row and column number. For example, a23 = 6.
+Related posts:Now you should move to some more complex data structures, such as Stack and Queue. 
+Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+Stack Data Structure
+The reason why Stack is considered a complex data structure is that it uses other data structures for implementation, such as Arrays, Linked lists, etc. based on the characteristics and features of Stack data structure.
+Related posts:Another data structure that is similar to Stack, yet different in its characteristics, is Queue.
+A Queue is a linear structure which follows First In First Out (FIFO) approach in its individual operations.
+Queue Data Structure A queue can be of different types like 
+Related posts:A Heap is a special Tree-based Data Structure in which the tree is a complete binary tree.
+Types of heaps:Generally, heaps are of two types.
+Max-Heap: In this heap, the value of the root node must be the greatest among all its child nodes and the same thing must be done for its left and right sub-tree also.
+Min-Heap: In this heap, the value of the root node must be the smallest among all its child nodes and the same thing must be done for its left ans right sub-tree also.
+Types of Heap Data Structure
+Related posts:Hashing refers to the process of generating a fixed-size output from an input of variable size using the mathematical formulas known as hash functions. This technique determines an index or location for the storage of an item in a data structure.
+What is Hashing
+Related posts:After having the basics covered about the linear data structure, now it is time to take a step forward to learn about the non-linear data structures. The first non-linear data structure you should learn is the tree. 
+Tree data structure is similar to a tree we see in nature but it is upside down. It also has a root and leaves. The root is the first node of the tree and the leaves are the ones at the bottom-most level. The special characteristic of a tree is that there is only one path to go from any of its nodes to any other node.
+Tree Data Structure Based on the maximum number of children of a node of the tree it can be – 
+Based on the configuration of nodes there are also several classifications. Some of them are:
+Related posts:Another important non-linear data structure is the graph. It is similar to the Tree data structure, with the difference that there is no particular root or leaf node, and it can be traversed in any order.
+A Graph is a non-linear data structure consisting of a finite set of vertices(or nodes) and a set of edges that connect a pair of nodes. 
+Graph Data Structure
+Each edge shows a connection between a pair of nodes. This data structure helps solve many real-life problems. Based on the orientation of the edges and the nodes there are various types of graphs. 
+Here are some must to know concepts of graphs:
+Related posts:Once you have cleared the concepts of Data Structures, now its time to start your journey through the Algorithms. Based on the type of nature and usage, the Algorithms are grouped together into several categories, as shown below:
+Now we have learned about some linear data structures and is time to learn about some basic and most used algorithms which are hugely used in these types of data structures. One such algorithm is the searching algorithm. 
+Searching algorithms are used to find a specific element in an array, string, linked list, or some other data structure. 
+The most common searching algorithms are: Besides these, there are other searching algorithms also like 
+Here is one other most used algorithm. Often we need to arrange or sort data as per a specific condition. The sorting algorithm is the one that is used in these cases. Based on conditions we can sort a set of homogeneous data in order like sorting an array in increasing or decreasing order. 
+Sorting Algorithm is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of element in the respective data structure.
+An example to show Sorting There are a lot of different types of sorting algorithms. Some widely used algorithms are:
+There are several other sorting algorithms also and they are beneficial in different cases. You can learn about them and more in our dedicated article on Sorting algorithms.
+This is one interesting and important algorithm to be learned in your path of programming. As the name suggests, it breaks the problem into parts, then solves each part and after that again merges the solved subtasks to get the actual problem solved. 
+Divide and Conquer is an algorithmic paradigm. A typical Divide and Conquer algorithm solves a problem using following three steps.
+This is the primary technique mentioned in the two sorting algorithms Merge Sort and Quick Sort which are mentioned earlier. To learn more about the technique, the cases where it is used, and its implementation and solve some interesting problems, please refer to the dedicated article Divide and Conquer Algorithm.
+As the name suggests, this algorithm builds up the solution one piece at a time and chooses the next piece which gives the most obvious and immediate benefit i.e., which is the most optimal choice at that moment. So the problems where choosing locally optimal also leads to the global solutions are best fit for Greedy.
+For example, consider the Fractional Knapsack Problem. The local optimal strategy is to choose the item that has maximum value vs weight ratio. This strategy also leads to a globally optimal solution because we are allowed to take fractions of an item.
+Fractional Knapsack Problem Here is how you can get started with the Greedy algorithm with the help of relevant sub-topics:
+Recursion is one of the most important algorithms which uses the concept of code reusability and repeated usage of the same piece of code. 
+Recursion The point which makes Recursion one of the most used algorithms is that it forms the base for many other algorithms such as:
+In Recursion, you can follow the below articles/links to get the most out of it: 
+As mentioned earlier, the Backtracking algorithm is derived from the Recursion algorithm, with the option to revert if a recursive solution fails, i.e. in case a solution fails, the program traces back to the moment where it failed and builds on another solution. So basically it tries out all the possible solutions and finds the correct one.
+Backtracking is an algorithmic technique for solving problems recursively by trying to build a solution incrementally, one piece at a time, removing those solutions that fail to satisfy the constraints of the problem at any point of time 
+Some important and most common problems of backtracking algorithms, that you must solve before moving ahead, are:
+Another crucial algorithm is dynamic programming. Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for the same inputs, we can optimize it using Dynamic Programming. 
+The main concept of the Dynamic Programming algorithm is to use the previously calculated result to avoid repeated calculations of the same subtask which helps in reducing the time complexity. 
+Dynamic Programming
+To learn more about dynamic programming and practice some interesting problems related to it, refer to the following articles:
+The Pattern Searching algorithms are sometimes also referred to as String Searching Algorithms and are considered as a part of the String algorithms. These algorithms are useful in the case of searching a string within another string.
+These algorithms are designed to solve Mathematical and Number Theory problems. They requires in-depth knowledge of different mathematical subjects like
+These algorithms are designed to solve Geometric Problems. They requires in-depth knowledge of different mathematical subjects like:LinesTriangleRectangleSquareCircle3D ObjectsQuadilateralPolygon & Convex HullFor Example: Comparing Slopes of two lines, Finding Equation of a plane etc.11. Bitwise AlgorithmsThe Bitwise Algorithms is used to perform operations at the bit-level or to manipulate bits in different ways. The bitwise operations are found to be much faster and are sometimes used to improve the efficiency of a program.For example: To check if a number is even or odd. This can be easily done by using Bitwise-AND(&) operator. If the last bit of the operator is set than it is ODD otherwise it is EVEN. Therefore, if num & 1 not equals to zero than num is ODD otherwise it is EVEN.12. Randomized AlgorithmsAn algorithm that uses random numbers to decide what to do next anywhere in its logic is called Randomized Algorithm. For example, in Randomized Quick Sort, we use a random number to pick the next pivot (or we randomly shuffle the array). Typically, this randomness is used to reduce time complexity or space complexity in other standard algorithms.13. Branch and Bound AlgorithmBranch and bound is an algorithm design paradigm which is generally used for solving combinatorial optimization problems. These problems are typically exponential in terms of time complexity and may require exploring all possible permutations in worst case. The Branch and Bound Algorithm technique solves these problems relatively quickly.4. Practice Problems on Data Structures and Algorithms (DSA)For practicing problems on individual data structures and algorithms, you can use the following links: Practice problems on ArraysPractice problems on StringsPractice problems on Linked ListsPractice problems on Searching algorithmPractice problems on Sorting algorithmPractice problems on Divide And Conquer algorithmPractice problems on StackPractice problems on QueuePractice problems on TreePractice problems on GraphPractice problems on Greedy algorithmPractice problems on Recursion algorithmPractice problems on Backtracking algorithmPractice problems on Dynamic Programming algorithmApart from these, there are many other practice problems that you can refer based on their respective difficulties:School-levelBasic levelEasy levelMedium levelHard levelYou can also try to solve the most asked interview questions based on the list curated by us at: Must-Do Coding Questions for CompaniesTop 50 Array Coding Problems for InterviewsTop 50 String Coding Problems for InterviewsTop 50 Tree Coding Problems for InterviewsTop 50 Dynamic Programming Coding Problems for InterviewsYou can also try our curated lists of problems from below articles:SDE SHEET – A Complete Guide for SDE PreparationDSA Sheet by Love BabbarIf you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.Please write comments if you find anything incorrect, or you want to share more information about the topic discussed aboveMy Personal Notes
+arrow_drop_upSave
+For Example: Comparing Slopes of two lines, Finding Equation of a plane etc.
+The Bitwise Algorithms is used to perform operations at the bit-level or to manipulate bits in different ways. The bitwise operations are found to be much faster and are sometimes used to improve the efficiency of a program.
+For example: To check if a number is even or odd. This can be easily done by using Bitwise-AND(&) operator. If the last bit of the operator is set than it is ODD otherwise it is EVEN. Therefore, if num & 1 not equals to zero than num is ODD otherwise it is EVEN.
+An algorithm that uses random numbers to decide what to do next anywhere in its logic is called Randomized Algorithm. For example, in Randomized Quick Sort, we use a random number to pick the next pivot (or we randomly shuffle the array). Typically, this randomness is used to reduce time complexity or space complexity in other standard algorithms.
+Branch and bound is an algorithm design paradigm which is generally used for solving combinatorial optimization problems. These problems are typically exponential in terms of time complexity and may require exploring all possible permutations in worst case. The Branch and Bound Algorithm technique solves these problems relatively quickly.
+

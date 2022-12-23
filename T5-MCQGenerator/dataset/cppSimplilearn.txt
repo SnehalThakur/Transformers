@@ -1,0 +1,43 @@
+C++ is one of the oldest programming languages. Bjarne Stroustrup invented it in 1979 in New Jersey at Bell laboratories. Earlier, C++ was known as C with classes, because they designed it as an extension of the C language. In 1982 the creators renamed it C++, and they added some new features like operator overloading, virtual functions, comments, and so on. In 1985 C++ was released for commercial implementation, and in the year 1989, its second edition was released.
+C++ is one of the most popular programming languages; it is an object-oriented, pre-compiled, and intermediate-level language. C++ has a wide variety of applications, and you use it for making games, developing software applications, operating systems, and whatnot. This tutorial on C++ Basics will help you understand all the basic concepts of C++.
+The first program for a beginner is the Hello World program; it is like a tradition in computer science to start with the Hello World program. In C++, you need to follow some set of rules if you want to write a program. This set of rules are called syntax, so you will understand this syntax along with the Hello World program.
+In line1, #include<iostream> is a header file responsible for adding features in the program. There are predefined functions in these header files that provide you with the features you need while writing a program. <iostream> header file contains definitions of cin, cout, etc, which helps you take inputs from the user and display the output. #include is a preprocessor, which is used while adding the header file in the program.Â
+In line2, using namespace std is a standard namespace which means you use the object and variable names from the standard library.
+In line3, int main(), known as the main function, is an essential part of a C++ program. The execution of the program always begins with the main function.
+In line7, cout is an object used to print the output in the program. For example, in this line, you will print Hello World!.
+In line8, return 0 means nothing will return in this program.Now, you will understand data types and variables in this C++ basics tutorial.
+Data types: They are used along with the variables; they instruct the variables on what kind of data they can store.
+Data types in C++ are of three types:
+Primitive data types: These data types are built-in and are used to declare variables. For example, boolean, integer, character, float, etc.
+Derived data types: These are called derived data types because it derives them from primitive data types. It includes function, array, pointer, etc.
+User-defined data type: These are those data types that the user defines.
+Variables: Variables are used to store values. To declare a variable, you must write the variable name with its data type. The syntax for a variable is:
+Now that you have understood data types and variables, move ahead and learn about arrays in this C++ Basics tutorial.
+Arrays are one of the most widely used concepts in C++. It is used to store homogeneous data in contiguous memory locations; the array elements have index values starting from 0. For example, you can declare 10 values of float type as an array, rather than declare 10 different variables.
+There are elements inside each memory block, and for each element, there is an index number.Now, move on to the next topic of the C++ Basics, i.e., Strings in C++.
+Strings are objects in C++, which represent text in the program, like displaying sentences in the programs. There are various operations that you can implement on strings.
+In C++ there are two ways to create strings:In this type, a collection of characters is stored like arrays. This type of string is used in the C language, so it is called C style strings.
+Here, string ch is holding six characters, and the one extra character is the null character \0, which is automatically added at the end of the string.
+Strings in C++ is an object that is a part of the standard library of C++. To use string class in the program, you must include <string> header in the program. It is more convenient to use C++ strings than C style strings.
+In C++, operators are symbols that are used to perform operations on data. These operations can be mathematical, or they can be logical.
+Different types of operators are:These operators are used for mathematical operations like addition, subtraction, multiplication, division, and so on.
+This operator is used for the comparison of two operands.As the name suggests, it is used for assigning values to the variables.These operators are used to connect two or more expressions to get a resultant value.
+Now, you will learn about conditional statements.These are those statements that allow you to regulate whether or not the block of code should execute.
+These statements are used when you want to run a code based on some conditions. The statements inside the if block execute if the statement's condition is true, otherwise the else block will execute.
+This statement is used if you want to check another condition after it does not meet the first condition.
+The switch statement is used to check on the condition against a list of values. Each value is called a case, and whichever case meets the condition, the code inside that case executes.Â
+Now, you will learn about another C++ Basics topic, i.e., Loops in C++.Full Stack Web Developer CourseTo become an expert in MEAN StackView Course
+Loops in C++ are used to execute a code block multiple times, and it helps to reduce the length of the code by executing the same code multiple times.
+There are two types of loops:This loop is used to repeat the code block for some exact number of times. The For loop contains three parts: initialization, condition, and updation.
+Here is the example, you are using a for loop with arrays along with if-else to find the number of even and odd elements.
+In this example, you have declared an array arr having some elements inside it, along with the variables even and odd, which you initialized from 0.
+To run the for loop, you need the length of the array, so this example has divided the size of all the array elements with the size of one element of the array, which would give you the length of the array.
+Inside the for loop, you initialized i from 0 to the length of the array so that every element of the array goes through the loop. Inside the if statement, there is a condition that will check for the even elements. If that condition satisfies, the if block executes and the even variable increments by one. If the condition is not satisfied then the else block will execute.
+This loop is used when you donât know the exact number of times the loop should repeat. The execution of this loop ends based on the test condition.
+In the above example, the test condition of the while loop is i<10, which means the loop will keep on repeating till i becomes equal to 9, i.e. i<10. The message Hello there! will display on the screen ten times, i.e. from 0 to 9, i++ will increment the loop after each iteration.
+You can define functions as a block of code or a group of statements that are designed to perform a specific task. It can easily invoke them from the main function at any point by using function_name(). You can also pass arguments to the function.
+In the above example, you will call the function printFunction(), and inside this function, you will print the numbers from 1 to 20 with the help of a while loop.
+After reading this article on C++ Basics, you would have understood all the basic concepts of various topics in C++ including arrays, strings, loops, functions. You also learned about the operators and conditional statements in C++ with the help of some examples.
+If you are perhaps looking to build a career in software development, do check the Post Graduate Program in Full Stack Development by Simplilearn. It can prove to be the ideal solution to help you build your career in the right way.
+Do you have any questions regarding this tutorial on C++ Basics? If you do, then please put them in the comments section. Weâll help you solve your queries. To learn more about C++ Basics, click on the following link: C++ Basics
+Simplilearn is one of the worldâs leading providers of online training for Digital Marketing, Cloud Computing, Project Management, Data Science, IT, Software Development, and many other emerging technologies.

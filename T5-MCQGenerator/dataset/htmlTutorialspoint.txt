@@ -1,0 +1,783 @@
+HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext.
+As its name suggests, HTML is a Markup Language which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.
+Originally, HTML was developed with the intent of defining the structure of documents like headings, paragraphs, lists, and so forth to facilitate the sharing of scientific information between researchers.
+Now, HTML is being widely used to format web pages with the help of different tags available in HTML language.
+In its simplest form, following is an example of an HTML document −
+As told earlier, HTML is a markup language and makes use of various tags to format the content. These tags are enclosed within angle braces <Tag Name>. Except few tags, most of the tags have their corresponding closing tags. For example, <html> has its closing tag </html> and <body> tag has its closing tag </body> tag etc.
+Above example of HTML document uses the following tags −
+This tag defines the document type and HTML version.
+This tag encloses the complete HTML document and mainly comprises of document header which is represented by <head>...</head> and document body which is represented by <body>...</body> tags.
+This tag represents the document's header which can keep other HTML tags like <title>, <link> etc.
+The <title> tag is used inside the <head> tag to mention the document title.
+This tag represents the document's body which keeps other HTML tags like <h1>, <div>, <p> etc.
+This tag represents the heading.
+This tag represents a paragraph.
+To learn HTML, you will need to study various tags and understand how they behave, while formatting a textual document. Learning HTML is simple as users have to learn the usage of different tags in order to format the text or images to make a beautiful webpage.
+World Wide Web Consortium (W3C) recommends to use lowercase tags starting from HTML 4.
+A typical HTML document will have the following structure −
+We will study all the header and body tags in subsequent chapters, but for now let's see what is document declaration tag.
+The <!DOCTYPE> declaration tag is used by the web browser to understand the version of the HTML used in the document. Current version of HTML is 5 and it makes use of the following declaration −
+There are many other declaration types which can be used in HTML document depending on what version of HTML is being used. We will see more details on this while discussing <!DOCTYPE...> tag along with other HTML tags.
+Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>. While displaying any heading, browser adds one line before and one line after that heading.
+This will produce the following result −
+The <p> tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening <p> and a closing </p> tag as shown below in the example −
+This will produce the following result −
+Whenever you use the <br /> element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them.
+The <br /> tag has a space between the characters br and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use <br> it is not valid in XHTML.
+This will produce the following result −
+You can use <center> tag to put any content in the center of the page or any table cell.
+This will produce following result −
+Horizontal lines are used to visually break-up sections of a document. The <hr> tag creates a line from the current position in the document to the right margin and breaks the line accordingly.
+For example, you may want to give a line between two paragraphs as in the given example below −
+This will produce the following result −
+Again <hr /> tag is an example of the empty element, where you do not need opening and closing tags, as there is nothing to go in between them.
+The <hr /> element has a space between the characters hr and the forward slash. If you omit this space, older browsers will have trouble rendering the horizontal line, while if you miss the forward slash character and just use <hr> it is not valid in XHTML
+Sometimes, you want your text to follow the exact format of how it is written in the HTML document. In these cases, you can use the preformatted tag <pre>.
+Any text between the opening <pre> tag and the closing </pre> tag will preserve the formatting of the source document.
+This will produce the following result −
+Try using the same code without keeping it inside <pre>...</pre> tags
+Suppose you want to use the phrase "12 Angry Men." Here, you would not want a browser to split the "12, Angry" and "Men" across two lines −
+In cases, where you do not want the client browser to break text, you should use a nonbreaking space entity &nbsp; instead of a normal space. For example, when coding the "12 Angry Men" in a paragraph, you should use something similar to the following code −
+This will produce the following result −
+An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag, where the element name is preceded by a forward slash as shown below with few tags −
+So here <p>....</p> is an HTML element, <h1>...</h1> is another HTML element. There are some HTML elements which don't need to be closed, such as <img.../>, <hr /> and <br /> elements. These are known as void elements.
+HTML documents consists of a tree of these elements and they specify how HTML documents should be built, and what kind of content should be placed in what part of an HTML document.
+An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag.
+For example, <p> is starting tag of a paragraph and </p> is closing tag of the same paragraph but <p>This is paragraph</p> is a paragraph element.
+It is very much allowed to keep one HTML element inside another HTML element −
+This will display the following result −
+We have seen few HTML tags and their usage like heading tags <h1>, <h2>, paragraph tag <p> and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information.
+An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts − a name and a value
+The name is the property you want to set. For example, the paragraph <p> element in the example carries an attribute whose name is align, which you can use to indicate the alignment of paragraph on the page.
+The value is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute:  left, center and right.
+Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation.
+This will display the following result −
+The four core attributes that can be used on the majority of HTML elements (although not all) are −
+The id attribute of an HTML tag can be used to uniquely identify any element within an HTML page. There are two primary reasons that you might want to use an id attribute on an element −
+If an element carries an id attribute as a unique identifier, it is possible to identify just that element and its content.
+If you have two elements of the same name within a Web page (or style sheet), you can use the id attribute to distinguish between elements that have the same name.
+We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish between two paragraph elements as shown below.
+Example
+The title attribute gives a suggested title for the element. They syntax for the title attribute is similar as explained for id attribute −
+The behavior of this attribute will depend upon the element that carries it, although it is often displayed as a tooltip when cursor comes over the element or while the element is loading.
+Example
+This will produce the following result −
+Now try to bring your cursor over "Titled Heading Tag Example" and you will see that whatever title you used in your code is coming out as a tooltip of the cursor.
+The class attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it.
+The value of the attribute may also be a space-separated list of class names. For example −
+The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element.
+This will produce the following result −
+At this point of time, we are not learning CSS, so just let's proceed without bothering much about CSS. Here, you need to understand what are HTML attributes and how they can be used while formatting content.
+There are three internationalization attributes, which are available for most (although not all) XHTML elements.
+The dir attribute allows you to indicate to the browser about the direction in which the text should flow. The dir attribute can take one of two values, as you can see in the table that follows −
+Example
+This will produce the following result −
+When dir attribute is used within the <html> tag, it determines how text will be presented within the entire document. When used within another tag, it controls the text's direction for just the content of that tag.
+The lang attribute allows you to indicate the main language used in a document, but this attribute was kept in HTML only for backwards compatibility with earlier versions of HTML. This attribute has been replaced by the xml:lang attribute in new XHTML documents.
+The values of the lang attribute are ISO-639 standard two-character language codes. Check HTML Language Codes: ISO 639 for a complete list of language codes.
+Example
+This will produce the following result −
+The xml:lang attribute is the XHTML replacement for the lang attribute. The value of the xml:lang attribute should be an ISO-639 country code as mentioned in previous section.
+Here's a table of some other attributes that are readily usable with many of the HTML tags.
+We will see related examples as we will proceed to study other HTML tags. For a complete list of HTML Tags and related attributes please check reference to HTML Tags List.
+If you use a word processor, you must be familiar with the ability to make text bold, italicized, or underlined; these are just three of the ten options available to indicate how text can appear in HTML and XHTML.
+Anything that appears within <b>...</b> element, is displayed in bold as shown below −
+This will produce the following result −
+Anything that appears within <i>...</i> element is displayed in italicized as shown below −
+This will produce the following result −
+Anything that appears within <u>...</u> element, is displayed with underline as shown below −
+This will produce the following result −
+Anything that appears within <strike>...</strike> element is displayed with strikethrough, which is a thin line through the text as shown below −
+This will produce the following result −
+The content of a <tt>...</tt> element is written in monospaced font. Most of the fonts are known as variable-width fonts because different letters are of different widths (for example, the letter 'm' is wider than the letter 'i'). In a monospaced font, however, each letter has the same width.
+This will produce the following result −
+The content of a <sup>...</sup> element is written in superscript; the font size used is the same size as the characters surrounding it but is displayed half a character's height above the other characters.
+This will produce the following result −
+The content of a <sub>...</sub> element is written in subscript; the font size used is the same as the characters surrounding it, but is displayed half a character's height beneath the other characters.
+This will produce the following result −
+Anything that appears within <ins>...</ins> element is displayed as inserted text.
+This will produce the following result −
+Anything that appears within <del>...</del> element, is displayed as deleted text.
+This will produce the following result −
+The content of the <big>...</big> element is displayed one font size larger than the rest of the text surrounding it as shown below −
+This will produce the following result −
+The content of the <small>...</small> element is displayed one font size smaller than the rest of the text surrounding it as shown below −
+This will produce the following result −
+The <div> and <span> elements allow you to group together several elements to create sections or subsections of a page.
+For example, you might want to put all of the footnotes on a page within a <div> element to indicate that all of the elements within that <div> element relate to the footnotes. You might then attach a style to this <div> element so that they appear using a special set of style rules.
+This will produce the following result −
+The <span> element, on the other hand, can be used to group inline elements only. So, if you have a part of a sentence or paragraph which you want to group together, you could use the <span> element as follows.
+This will produce the following result −
+These tags are commonly used with CSS to allow you to attach a style to a section of a page.
+The phrase tags have been desicolgned for specific purposes, though they are displayed in a similar way as other basic tags like <b>, <i>, <pre>, and <tt>, you have seen in previous chapter. This chapter will take you through all the important phrase tags, so let's start seeing them one by one.
+Anything that appears within <em>...</em> element is displayed as emphasized text.
+This will produce the following result −
+Anything that appears with-in <mark>...</mark> element, is displayed as marked with yellow ink.
+This will produce the following result −
+Anything that appears within <strong>...</strong> element is displayed as important text.
+This will produce the following result −
+You can abbreviate a text by putting it inside opening <abbr> and closing </abbr> tags. If present, the title attribute must contain this full description and nothing else.
+This will produce the following result −
+The <acronym> element allows you to indicate that the text between <acronym> and </acronym> tags is an acronym.
+At present, the major browsers do not change the appearance of the content of the <acronym> element.
+This will produce the following result −
+The <bdo>...</bdo> element stands for Bi-Directional Override and it is used to override the current text direction.
+This will produce the following result −
+The <dfn>...</dfn> element (or HTML Definition Element) allows you to specify that you are introducing a special term. It's usage is similar to italic words in the midst of a paragraph.
+Typically, you would use the <dfn> element the first time you introduce a key term. Most recent browsers render the content of a <dfn> element in an italic font.
+This will produce the following result −
+When you want to quote a passage from another source, you should put it in between <blockquote>...</blockquote> tags.
+Text inside a <blockquote> element is usually indented from the left and right edges of the surrounding text, and sometimes uses an italicized font.
+This will produce the following result −
+The <q>...</q> element is used when you want to add a double quote within a sentence.
+This will produce the following result −
+If you are quoting a text, you can indicate the source placing it between an opening <cite> tag and closing </cite> tag
+As you would expect in a print publication, the content of the <cite> element is rendered in italicized text by default.
+This will produce the following result −
+Any programming code to appear on a Web page should be placed inside <code>...</code> tags. Usually the content of the <code> element is presented in a monospaced font, just like the code in most programming books.
+This will produce the following result −
+When you are talking about computers, if you want to tell a reader to enter some text, you can use the <kbd>...</kbd> element to indicate what should be typed in, as in this example.
+This will produce the following result −
+This element is usually used in conjunction with the <pre> and <code> elements to indicate that the content of that element is a variable.
+This will produce the following result −
+The <samp>...</samp> element indicates sample output from a program, and script etc. Again, it is mainly used when documenting programming or coding concepts.
+This will produce the following result −
+The <address>...</address> element is used to contain any address.
+This will produce the following result −
+HTML lets you specify metadata - additional important information about a document in a variety of ways. The META elements can be used to include name/value pairs describing properties of the HTML document, such as author, expiry date, a list of keywords, document author etc.
+The <meta> tag is used to provide such additional information. This tag is an empty element and so does not have a closing tag but it carries information within its attributes.
+You can include one or more meta tags in your document based on what information you want to keep in your document but in general, meta tags do not impact physical appearance of the document so from appearance point of view, it does not matter if you include them or not.
+You can add metadata to your web pages by placing <meta> tags inside the header of the document which is represented by <head> and </head> tags. A meta tag can have following attributes in addition to core attributes −
+Name
+Name for the property. Can be anything. Examples include, keywords, description, author, revised, generator etc.
+content
+Specifies the property's value.
+scheme
+Specifies a scheme to interpret the property's value (as declared in the content attribute).
+http-equiv
+Used for http response message headers. For example, http-equiv can be used to refresh the page or to set a cookie. Values include content-type, expires, refresh and set-cookie.
+You can use <meta> tag to specify important keywords related to the document and later these keywords are used by the search engines while indexing your webpage for searching purpose.
+Following is an example, where we are adding HTML, Meta Tags, Metadata as important keywords about the document.
+This will produce the following result −
+You can use <meta> tag to give a short description about the document. This again can be used by various search engines while indexing your webpage for searching purpose.
+You can use <meta> tag to give information about when last time the document was updated. This information can be used by various web browsers while refreshing your webpage.
+A <meta> tag can be used to specify a duration after which your web page will keep refreshing automatically.
+If you want your page keep refreshing after every 5 seconds then use the following syntax.
+You can use <meta> tag to redirect your page to any other webpage. You can also specify a duration if you want to redirect the page after a certain number of seconds.
+Following is an example of redirecting current page to another page after 5 seconds. If you want to redirect page immediately then do not specify content attribute.
+Cookies are data, stored in small text files on your computer and it is exchanged between web browser and web server to keep track of various information based on your web application need.
+You can use <meta> tag to store cookies on client side and later this information can be used by the Web Server to track a site visitor.
+Following is an example of redirecting current page to another page after 5 seconds. If you want to redirect page immediately then do not specify content attribute.
+If you do not include the expiration date and time, the cookie is considered a session cookie and will be deleted when the user exits the browser.
+Note − You can check PHP and Cookies tutorial for a complete detail on Cookies.
+You can set an author name in a web page using meta tag. See an example below −
+You can use <meta> tag to specify character set used within the webpage.
+By default, Web servers and Web browsers use ISO-8859-1 (Latin1) encoding to process Web pages. Following is an example to set UTF-8 encoding −
+To serve the static page with traditional Chinese characters, the webpage must contain a <meta> tag to set Big5 encoding −
+Comment is a piece of code which is ignored by any web browser. It is a good practice to add comments into your HTML code, especially in complex documents, to indicate sections of a document, and any other notes to anyone looking at the code. Comments help you and others understand your code and increases code readability.
+HTML comments are placed in between <!-- ... --> tags. So, any content placed with-in <!-- ... --> tags will be treated as comment and will be completely ignored by the browser.
+This will produce the following result without displaying the content given as a part of comments −
+Comments do not nest which means a comment cannot be put inside another comment. Second the double-dash sequence "--" may not appear inside a comment except as part of the closing --> tag. You must also make sure that there are no spaces in the start-of comment string.
+Here, the given comment is a valid comment and will be wiped off by the browser.
+This will produce the following result −
+But, following line is not a valid comment and will be displayed by the browser. This is because there is a space between the left angle bracket and the exclamation mark.
+This will produce the following result −
+So far we have seen single line comments, but HTML supports multi-line comments as well.
+You can comment multiple lines by the special beginning tag <!-- and ending tag --> placed before the first line and end of the last line as shown in the given example below.
+This will produce the following result −
+Conditional comments only work in Internet Explorer (IE) on Windows but they are ignored by other browsers. They are supported from Explorer 5 onwards, and you can use them to give conditional instructions to different versions of IE.
+You will come across a situation where you will need to apply a different style sheet based on different versions of Internet Explorer, in such situation conditional comments will be helpful.
+There are few browsers that support <comment> tag to comment a part of HTML code.
+Note − The <comment> tag deprecated in HTML5. Do not use this element.
+If you are using IE, then it will produce following result −
+But if you are not using IE, then it will produce following result −
+Though you will learn JavaScript with HTML, in a separate tutorial, but here you must make a note that if you are using Java Script or VB Script in your HTML code then it is recommended to put that script code inside proper HTML comments so that old browsers can work properly.
+This will produce the following result −
+Though you will learn using style sheets with HTML in a separate tutorial, but here you must make a note that if you are using Cascading Style Sheet (CSS) in your HTML code then it is recommended to put that style sheet code inside proper HTML comments so that old browsers can work properly.
+This will produce the following result −
+Images are very important to beautify as well as to depict many complex concepts in simple way on your web page. This tutorial will take you through simple steps to use images in your web pages.
+You can insert any image in your web page by using <img> tag. Following is the simple syntax to use this tag.
+The <img> tag is an empty tag, which means that, it can contain only list of attributes and it has no closing tag.
+To try following example, let's keep our HTML file test.htm and image file test.png in the same directory −
+This will produce the following result −
+You can use PNG, JPEG or GIF image file based on your comfort but make sure you specify correct image file name in src attribute. Image name is always case sensitive.
+The alt attribute is a mandatory attribute which specifies an alternate text for an image, if the image cannot be displayed.
+Usually we keep all the images in a separate directory. So let's keep HTML file test.htm in our home directory and create a subdirectory images inside the home directory where we will keep our image test.png.
+Assuming our image location is "image/test.png", try the following example −
+This will produce the following result −
+You can set image width and height based on your requirement using width and height attributes. You can specify width and height of the image in terms of either pixels or percentage of its actual size.
+This will produce the following result −
+By default, image will have a border around it, you can specify border thickness in terms of pixels using border attribute. A thickness of 0 means, no border around the picture.
+This will produce the following result −
+By default, image will align at the left side of the page, but you can use align attribute to set it in the center or right.
+This will produce the following result −
+For Free Web Graphics including patterns you can look into Free Web Graphics
+The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.
+The HTML tables are created using the <table> tag in which the <tr> tag is used to create table rows and <td> tag is used to create data cells. The elements under <td> are regular and left aligned by default
+This will produce the following result −
+Here, the border is an attribute of <table> tag and it is used to put a border across all the cells. If you do not need a border, then you can use border = "0".
+Table heading can be defined using <th> tag. This tag will be put to replace <td> tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use <th> element in any row. Headings, which are defined in <th> tag are centered and bold by default.
+This will produce the following result −
+There are two attributes called cellpadding and cellspacing which you will use to adjust the white space in your table cells. The cellspacing attribute defines space between table cells, while cellpadding represents the distance between cell borders and the content within a cell.
+This will produce the following result −
+You will use colspan attribute if you want to merge two or more columns into a single column. Similar way you will use rowspan if you want to merge two or more rows.
+This will produce the following result −
+You can set table background using one of the following two ways −
+bgcolor attribute − You can set background color for whole table or just for one cell.
+background attribute − You can set background image for whole table or just for one cell.
+You can also set border color also using bordercolor attribute.
+Note − The bgcolor, background, and bordercolor attributes deprecated in HTML5. Do not use these attributes.
+This will produce the following result −
+Here is an example of using background attribute. Here we will use an image available in /images directory.
+This will produce the following result. Here background image did not apply to table's header.
+You can set a table width and height using width and height attributes. You can specify table width or height in terms of pixels or in terms of percentage of available screen area.
+This will produce the following result −
+The caption tag will serve as a title or explanation for the table and it shows up at the top of the table. This tag is deprecated in newer version of HTML/XHTML.
+This will produce the following result −
+Tables can be divided into three portions − a header, a body, and a foot. The head and foot are rather similar to headers and footers in a word-processed document that remain the same for every page, while the body is the main content holder of the table.
+The three elements for separating the head, body, and foot of a table are −
+<thead> − to create a separate table header.
+<tbody> − to indicate the main body of the table.
+<tfoot> − to create a separate table footer.
+A table may contain several <tbody> elements to indicate different pages or groups of data. But it is notable that <thead> and <tfoot> tags should appear before <tbody>
+This will produce the following result −
+You can use one table inside another table. Not only tables you can use almost all the tags inside table data tag <td>.
+Following is the example of using another table and other tags inside a table cell.
+This will produce the following result −
+HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain −
+<ul> − An unordered list. This will list items using plain bullets.
+<ol> − An ordered list. This will use different schemes of numbers to list your items.
+<dl> − A definition list. This arranges your items in the same way as they are arranged in a dictionary.
+An unordered list is a collection of related items that have no special order or sequence. This list is created by using HTML <ul> tag. Each item in the list is marked with a bullet.
+This will produce the following result −
+You can use type attribute for <ul> tag to specify the type of bullet you like. By default, it is a disc. Following are the possible options −
+Following is an example where we used <ul type = "square">
+This will produce the following result −
+Following is an example where we used <ul type = "disc"> −
+This will produce the following result −
+Following is an example where we used <ul type = "circle"> −
+This will produce the following result −
+If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used. This list is created by using <ol> tag. The numbering starts at one and is incremented by one for each successive ordered list element tagged with <li>.
+This will produce the following result −
+You can use type attribute for <ol> tag to specify the type of numbering you like. By default, it is a number. Following are the possible options −
+Following is an example where we used <ol type = "1">
+This will produce the following result −
+Following is an example where we used <ol type = "I">
+This will produce the following result −
+Following is an example where we used <ol type = "i">
+This will produce the following result −
+Following is an example where we used <ol type = "A" >
+This will produce the following result −
+Following is an example where we used <ol type = "a">
+This will produce the following result −
+You can use start attribute for <ol> tag to specify the starting point of numbering you need. Following are the possible options −
+Following is an example where we used <ol type = "i" start = "4" >
+This will produce the following result −
+HTML and XHTML supports a list style which is called definition lists where entries are listed like in a dictionary or encyclopedia. The definition list is the ideal way to present a glossary, list of terms, or other name/value list.
+Definition List makes use of following three tags.
+This will produce the following result −
+A webpage can contain various links that take you directly to other pages and even specific parts of a given page. These links are known as hyperlinks.
+Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. Thus you can create hyperlinks using text or images available on a webpage.
+Note − I recommend you to go through a short tutorial on Understanding URL
+A link is specified using HTML tag <a>. This tag is called anchor tag and anything between the opening <a> tag and the closing </a> tag becomes part of the link and a user can click that part to reach to the linked document. Following is the simple syntax to use <a> tag.
+Let's try following example which links http://www.tutorialspoint.com at your page −
+This will produce the following result, where you can click on the link generated to reach to the home page of Tutorials Point (in this example).
+We have used target attribute in our previous example. This attribute is used to specify the location where linked document is opened. Following are the possible options −
+_blank
+Opens the linked document in a new window or tab.
+_self
+Opens the linked document in the same frame.
+_parent
+Opens the linked document in the parent frame.
+_top
+Opens the linked document in the full body of the window.
+targetframe
+Opens the linked document in a named targetframe.
+Try following example to understand basic difference in few options given for target attribute.
+This will produce the following result, where you can click on different links to understand the difference between various options given for target attribute.
+When you link HTML documents related to the same website, it is not required to give a complete URL for every link. You can get rid of it if you use <base> tag in your HTML document header. This tag is used to give a base path for all the links. So your browser will concatenate given relative path to this base path and will make a complete URL.
+Following example makes use of <base> tag to specify base URL and later we can use relative path to all the links instead of giving complete URL for every link.
+This will produce the following result, where you can click on the link generated HTML Tutorial to reach to the HTML tutorial.
+Now given URL <a href = "/html/index.htm" is being considered as <ahref = "http://www.tutorialspoint.com/html/index.htm"
+You can create a link to a particular section of a given webpage by using name attribute. This is a two-step process.
+Note − The name attribute deprecated in HTML5. Do not use this attribute. Use id and title attribute instead.
+First create a link to the place where you want to reach with-in a webpage and name it using <a...> tag as follows −
+Second step is to create a hyperlink to link the document and place where you want to reach −
+This will produce following link, where you can click on the link generated Go to the Top to reach to the top of the HTML Text Link tutorial.
+You can set colors of your links, active links and visited links using link, alink and vlink attributes of <body> tag.
+Save the following in test.htm and open it in any web browser to see how link, alink and vlink attributes work.
+This will produce the following result. Just check color of the link before clicking on it, next check its color when you activate it and when the link has been visited.
+You can create text link to make your PDF, or DOC or ZIP files downloadable. This is very simple; you just need to give complete URL of the downloadable file as follows −
+This will produce following link and will be used to download a file.
+Sometimes it is desired that you want to give an option where a user will click a link and it will pop up a "File Download" box to the user instead of displaying actual content. This is very easy and can be achieved using an HTTP header in your HTTP response.
+For example, if you want make a Filename file downloadable from a given link then its syntax will be as follows.
+Note − For more detail on PERL CGI programs, go through tutorial PERL and CGI.
+We have seen how to create hypertext link using text and we also learnt how to use images in our webpages. Now, we will learn how to use images to create hyperlinks.
+It's simple to use an image as hyperlink. We just need to use an image inside hyperlink at the place of text as shown below −
+This will produce the following result, where you can click on the images to reach to the home page of Tutorials Point.
+This was the simplest way of creating hyperlinks using images. Next we will see how we can create Mouse-Sensitive Image Links.
+The HTML and XHTML standards provides a feature that lets you embed many different links inside a single image. You can create different links on the single image based on different coordinates available on the image. Once different links are attached to different coordinates, we can click different parts of the image to open target documents. Such mouse-sensitive images are known as image maps.
+There are two ways to create image maps −
+Server-side image maps − This is enabled by the ismap attribute of the <img> tag and requires access to a server and related image-map processing applications.
+Client-side image maps − This is created with the usemap attribute of the <img> tag, along with corresponding <map> and <area> tags.
+Here you simply put your image inside a hyper link and use ismap attribute which makes it special image and when the user clicks some place within the image, the browser passes the coordinates of the mouse pointer along with the URL specified in the <a> tag to the web server. The server uses the mouse-pointer coordinates to determine which document to deliver back to the browser.
+When ismap is used, the href attribute of the containing <a> tag must contain the URL of a server application like a cgi or PHP script etc. to process the incoming request based on the passed coordinates.
+The coordinates of the mouse position are screen pixels counted from the upper-left corner of the image, beginning with (0,0). The coordinates, preceded by a question mark, are added to the end of the URL.
+For example, if a user clicks 20 pixels over and 30 pixels down from the upper-left corner of the following image −
+Which has been generated by the following code snippet −
+Then the browser sends the following search parameters to the web server which can be processed by ismap.cgi script or map file and you can link whatever documents you like to these coordinates −
+This way you can assign different links to different coordinates of the image and when those coordinates are clicked, you can open corresponding linked document. To learn more about ismap attribute, you can check How to use Image ismap?
+Note − You will learn CGI programming when you will study Perl programming. You can write your script to process these passed coordinates using PHP or any other script as well. For now, let's concentrate on learning HTML and later you can revisit this section.
+Client side image maps are enabled by the usemap attribute of the <img /> tag and defined by special <map> and <area> extension tags.
+The image that is going to form the map is inserted into the page using the <img /> tag as a normal image, except it carries an extra attribute called usemap. The value of the usemap attribute is the value which will be used in a <map> tag to link map and image tags. The <map> along with <area> tags define all the image coordinates and corresponding links.
+The <area> tag inside the map tag, specifies the shape and the coordinates to define the boundaries of each clickable hotspot available on the image. Here's an example from the image map −
+This will produce the following result −
+The actual value of coords is totally dependent on the shape in question. Here is a summary, to be followed by detailed examples −
+rect = x1 , y1 , x2 , y2
+x1 and y1 are the coordinates of the upper left corner of the rectangle; x2 and y2 are the coordinates of the lower right corner.
+circle = xc , yc , radius
+xc and yc are the coordinates of the center of the circle, and radius is the circle's radius. A circle centered at 200,50 with a radius of 25 would have the attribute coords = "200,50,25"
+poly = x1 , y1 , x2 , y2 , x3 , y3 , ... xn , yn
+The various x-y pairs define vertices (points) of the polygon, with a "line" being drawn from one point to the next point. A diamond-shaped polygon with its top point at 20,20 and 40 pixels across at its widest points would have the attribute coords = "20,20,40,40,20,60,0,40".
+All coordinates are relative to the upper-left corner of the image (0,0). Each shape has a related URL. You can use any image software to know the coordinates of different positions.
+It is not difficult to put an HTML email link on your webpage but it can cause unnecessary spamming problem for your email account. There are people, who can run programs to harvest these types of emails and later use them for spamming in various ways.
+You can have another option to facilitate people to send you emails. One option could be to use HTML forms to collect user data and then use PHP or CGI script to send an email.
+A simple example, check our Contact Us Form. We take user feedback using this form and then we are using one CGI program which is collecting this information and sending us email to the one given email ID.
+Note − You will learn about HTML Forms in HTML Forms and you will learn about CGI in our another tutorial Perl CGI Programming.
+HTML <a> tag provides you option to specify an email address to send an email. While using <a> tag as an email tag, you will use mailto: email address along with href attribute. Following is the syntax of using mailto instead of using http.
+This code will generate the following link which you can use to send email.
+Now, if a user clicks this link, it launches one Email Client (like Lotus Notes, Outlook Express etc. ) installed on your user's computer. There is another risk to use this option to send email because if user do not have email client installed on their computer then it would not be possible to send email.
+You can specify a default email subject and email body along with your email address. Following is the example to use default subject and body.
+This code will generate the following link which you can use to send email.
+HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.
+There are few drawbacks with using frames, so it's never recommended to use frames in your webpages −
+Some smaller devices cannot cope with frames often because their screen is not big enough to be divided up.
+Sometimes your page will be displayed differently on different computers due to different screen resolution.
+The browser's back button might not work as the user hopes.
+There are still few browsers that do not support frame technology.
+To use frames on a page we use <frameset> tag instead of <body> tag. The <frameset> tag defines, how to divide the window into frames. The rows attribute of <frameset> tag defines horizontal frames and cols attribute defines vertical frames. Each frame is indicated by <frame> tag and it defines which HTML document shall open into the frame.
+Note − The <frame> tag deprecated in HTML5. Do not use this element.
+Following is the example to create three horizontal frames −
+This will produce the following result −
+Let's put the above example as follows, here we replaced rows attribute by cols and changed their width. This will create all the three frames vertically −
+This will produce the following result −
+Following are important attributes of the <frameset> tag −
+cols
+Specifies how many columns are contained in the frameset and the size of each column. You can specify the width of each column in one of the four ways −
+Absolute values in pixels. For example, to create three vertical frames, use cols = "100, 500, 100".
+A percentage of the browser window. For example, to create three vertical frames, use cols = "10%, 80%, 10%".
+Using a wildcard symbol. For example, to create three vertical frames, use cols = "10%, *, 10%". In this case wildcard takes remainder of the window.
+As relative widths of the browser window. For example, to create three vertical frames, use cols = "3*, 2*, 1*". This is an alternative to percentages. You can use relative widths of the browser window. Here the window is divided into sixths: the first column takes up half of the window, the second takes one third, and the third takes one sixth.
+rows
+This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset. For example, to create two horizontal frames, use rows = "10%, 90%". You can specify the height of each row in the same way as explained above for columns.
+border
+This attribute specifies the width of the border of each frame in pixels. For example, border = "5". A value of zero means no border.
+frameborder
+This attribute specifies whether a three-dimensional border should be displayed between frames. This attribute takes value either 1 (yes) or 0 (no). For example frameborder = "0" specifies no border.
+framespacing
+This attribute specifies the amount of space between frames in a frameset. This can take any integer value. For example framespacing = "10" means there should be 10 pixels spacing between each frames.
+Following are the important attributes of <frame> tag −
+src
+This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.
+name
+This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.
+frameborder
+This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the <frameset> tag if one is given, and this can take values either 1 (yes) or 0 (no).
+marginwidth
+This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels. For example marginwidth = "10".
+marginheight
+This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels. For example marginheight = "10".
+noresize
+By default, you can resize any frame by clicking and dragging on the borders of a frame. The noresize attribute prevents a user from being able to resize the frame. For example noresize = "noresize".
+scrolling
+This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". For example scrolling = "no" means it should not have scroll bars.
+longdesc
+This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm"
+If a user is using any old browser or any browser, which does not support frames then <noframes> element should be displayed to the user.
+So you must place a <body> element inside the <noframes> element because the <frameset> element is supposed to replace the <body> element, but if a browser does not understand <frameset> element then it should understand what is inside the <body> element which is contained in a <noframes> element.
+You can put some nice message for your user having old browsers. For example, Sorry!! your browser does not support frames. as shown in the above example.
+One of the most popular uses of frames is to place navigation bars in one frame and then load main pages into a separate frame.
+Let's see following example where a test.htm file has following code −
+Here, we have created two columns to fill with two frames. The first frame is 200 pixels wide and will contain the navigation menu bar implemented by menu.htm file. The second column fills in remaining space and will contain the main part of the page and it is implemented by main.htm file. For all the three links available in menu bar, we have mentioned target frame as main_page, so whenever you click any of the links in menu bar, available link will open in main page.
+Following is the content of menu.htm file
+Following is the content of main.htm file −
+When we load test.htm file, it produces following result −
+Now you can try to click links available in the left panel and see the result. The targetattribute can also take one of the following values −
+_self
+Loads the page into the current frame.
+_blank
+Loads a page into a new browser window. Opening a new window.
+_parent
+Loads the page into the parent window, which in the case of a single frameset is the main browser window.
+_top
+Loads the page into the browser window, replacing any current frames.
+targetframe
+Loads the page into a named targetframe.
+You can define an inline frame with HTML tag <iframe>. The <iframe> tag is not somehow related to <frameset> tag, instead, it can appear anywhere in your document. The <iframe> tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document.
+The src attribute is used to specify the URL of the document that occupies the inline frame.
+Following is the example to show how to use the <iframe> −
+This will produce the following result −
+Most of the attributes of the <iframe> tag, including name, class, frameborder, id, longdesc, marginheight, marginwidth, name, scrolling, style, and title behave exactly like the corresponding attributes for the <frame> tag.
+Note − The frameborder, marginwidth, longdesc, scrolling, marginheight attributes deprecated in HTML5. Do not use these attributes.
+src
+This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.
+name
+This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.
+frameborder
+This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the <frameset> tag if one is given, and this can take values either 1 (yes) or 0 (no).
+marginwidth
+This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels. For example marginwidth = "10".
+marginheight
+This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels. For example marginheight = "10".
+height
+This attribute specifies the height of <iframe>.
+scrolling
+This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". For example scrolling = "no" means it should not have scroll bars.
+longdesc
+This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm"
+width
+This attribute specifies the width of <iframe>.
+All the HTML elements can be categorized into two categories (a) Block Level Elements (b)Inline Elements.
+Block elements appear on the screen as if they have a line break before and after them. For example, the <p>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <ul>, <ol>, <dl>, <pre>, <hr />, <blockquote>, and <address> elements are all block level elements. They all start on their own new line, and anything that follows them appears on its own new line.
+Inline elements, on the other hand, can appear within sentences and do not have to appear on a new line of their own. The <b>, <i>, <u>, <em>, <strong>, <sup>, <sub>, <big>, <small>, <li>, <ins>, <del>, <code>, <cite>, <dfn>, <kbd>, and <var> elements are all inline elements.
+There are two important tags which we use very frequently to group various other HTML tags (i) <div> tag and (ii) <span> tag
+This is the very important block level tag which plays a big role in grouping various other HTML tags and applying CSS on group of elements. Even now <div> tag can be used to create webpage layout where we define different parts (Left, Right, Top etc.) of the page using <div> tag. This tag does not provide any visual change on the block but this has more meaning when it is used with CSS.
+Following is a simple example of <div> tag. We will learn Cascading Style Sheet (CSS) in a separate chapter but we used it here to show the usage of <div> tag −
+This will produce the following result −
+The HTML <span> is an inline element and it can be used to group inline-elements in an HTML document. This tag also does not provide any visual change on the block but has more meaning when it is used with CSS.
+The difference between the <span> tag and the <div> tag is that the <span> tag is used with inline elements whereas the <div> tag is used with block-level elements.
+Following is a simple example of <span> tag. We will learn Cascading Style Sheet (CSS) in a separate chapter but we used it here to show the usage of <span> tag −
+This will produce the following result −
+By default, your webpage background is white in color. You may not like it, but no worries. HTML provides you following two good ways to decorate your webpage background.
+Now let's see both the approaches one by one using appropriate examples.
+The bgcolor attribute is used to control the background of an HTML element, specifically page body and table backgrounds.
+Note − The bgcolor attribute deprecated in HTML5. Do not use this attribute.
+Following is the syntax to use bgcolor attribute with any HTML tag.
+This color_value can be given in any of the following formats −
+Here are the examples to set background of an HTML tag −
+This will produce the following result −
+The background attribute can also be used to control the background of an HTML element, specifically page body and table backgrounds. You can specify an image to set background of your HTML page or table.
+Note − The background attribute deprecated in HTML5. Do not use this attribute.
+Following is the syntax to use background attribute with any HTML tag.
+Note − The background attribute is deprecated and it is recommended to use Style Sheet for background setting.
+The most frequently used image formats are JPEG, GIF and PNG images.
+Here are the examples to set background images of a table.
+This will produce the following result −
+You might have seen many pattern or transparent backgrounds on various websites. This simply can be achieved by using patterned image or transparent image in the background.
+It is suggested that while creating patterns or transparent GIF or PNG images, use the smallest dimensions possible even as small as 1x1 to avoid slow loading.
+Here are the examples to set background pattern of a table −
+This will produce the following result −
+Colors are very important to give a good look and feel to your website. You can specify colors on page level using <body> tag or you can set colors for individual tags using bgcolor attribute.
+The <body> tag has following attributes which can be used to set different colors −
+bgcolor − sets a color for the background of the page.
+text − sets a color for the body text.
+alink − sets a color for active links or selected links.
+link − sets a color for linked text.
+vlink − sets a color for visited links − that is, for linked text that you have already clicked on.
+There are following three different methods to set colors in your web page −
+Color names − You can specify color names directly like green, blue or red.
+Hex codes − A six-digit code representing the amount of red, green, and blue that makes up the color.
+Color decimal or percentage values − This value is specified using the rgb( ) property.
+Now we will see these coloring schemes one by one.
+You can specify direct a color name to set text or background color. W3C has listed 16 basic color names that will validate with an HTML validator but there are over 200 different color names supported by major browsers.
+Note − Check a complete list of HTML Color Name.
+Here is the list of W3C Standard 16 Colors names and it is recommended to use them.
+Here are the examples to set background of an HTML tag by color name −
+A hexadecimal is a 6 digit representation of a color. The first two digits(RR) represent a red value, the next two are a green value(GG), and the last are the blue value(BB).
+A hexadecimal value can be taken from any graphics software like Adobe Photoshop, Paintshop Pro or MS Paint.
+Each hexadecimal code will be preceded by a pound or hash sign #. Following is a list of few colors using hexadecimal notation.
+Here are the examples to set background of an HTML tag by color code in hexadecimal −
+This color value is specified using the rgb( ) property. This property takes three values, one each for red, green, and blue. The value can be an integer between 0 and 255 or a percentage.
+Note −  All the browsers does not support rgb() property of color so it is recommended not to use it.
+Following is a list to show few colors using RGB values.
+Here are the examples to set background of an HTML tag by color code using rgb() values −
+Here is the list of 216 colors which are supposed to be safest and computer independent colors. These colors very from hexa code 000000 to FFFFFF and they will be supported by all the computers having 256 color palette.
+Fonts play a very important role in making a website more user friendly and increasing content readability. Font face and color depends entirely on the computer and browser that is being used to view your page but you can use HTML <font> tag to add style, size, and color to the text on your website. You can use a <basefont> tag to set all of your text to the same size, face, and color.
+The font tag is having three attributes called size, color, and face to customize your fonts. To change any of the font attributes at any time within your webpage, simply use the <font> tag. The text that follows will remain changed until you close with the </font> tag. You can change one or all of the font attributes within one <font> tag.
+Note −The font and basefont tags are deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use CSS styles to manipulate your fonts. But still for learning purpose, this chapter will explain font and basefont tags in detail.
+You can set content font size using size attribute. The range of accepted values is from 1(smallest) to 7(largest). The default size of a font is 3.
+This will produce the following result −
+You can specify how many sizes larger or how many sizes smaller than the preset font size should be. You can specify it like <font size = "+n"> or <font size = "−n">
+This will produce the following result −
+You can set font face using face attribute but be aware that if the user viewing the page doesn't have the font installed, they will not be able to see it. Instead user will see the default font face applicable to the user's computer.
+This will produce the following result −
+A visitor will only be able to see your font if they have that font installed on their computer. So, it is possible to specify two or more font face alternatives by listing the font face names, separated by a comma.
+When your page is loaded, their browser will display the first font face available. If none of the given fonts are installed, then it will display the default font face Times New Roman.
+Note − Check a complete list of HTML Standard Fonts.
+You can set any font color you like using color attribute. You can specify the color that you want by either the color name or hexadecimal code for that color.
+Note − You can check a complete list of HTML Color Name with Codes.
+This will produce the following result −
+The <basefont> element is supposed to set a default font size, color, and typeface for any parts of the document that are not otherwise contained within a <font> tag. You can use the <font> elements to override the <basefont> settings.
+The <basefont> tag also takes color, size and face attributes and it will support relative font setting by giving size a value of +1 for a size larger or −2 for two sizes smaller.
+This will produce the following result −
+HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration you would like to collect information such as name, email address, credit card, etc.
+A form will take input from the site visitor and then will post it to a back-end application such as CGI, ASP Script or PHP script etc. The back-end application will perform required processing on the passed data based on defined business logic inside the application.
+There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.
+The HTML <form> tag is used to create an HTML form and it has following syntax −
+Apart from common attributes, following is a list of the most frequently used form attributes −
+action
+Backend script ready to process your passed data.
+method
+Method to be used to upload data. The most frequently used are GET and POST methods.
+target
+Specify the target window or frame where the result of the script will be displayed. It takes values like _blank, _self, _parent etc.
+enctype
+You can use the enctype attribute to specify how the browser encodes the data before it sends it to the server. Possible values are −
+application/x-www-form-urlencoded − This is the standard method most forms use in simple scenarios.
+mutlipart/form-data − This is used when you want to upload binary data in the form of files like image, word file etc.
+Note − You can refer to Perl & CGI for a detail on how form data upload works.
+There are different types of form controls that you can use to collect data using HTML form −
+There are three types of text input used on forms −
+Single-line text input controls − This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML <input> tag.
+Password input controls − This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTMl <input> tag.
+Multi-line text input controls − This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML <textarea> tag.
+This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML <input> tag.
+Here is a basic example of a single-line text input used to take first name and last name −
+This will produce the following result −
+Following is the list of attributes for <input> tag for creating text field.
+type
+Indicates the type of input control and for text input control it will be set to text.
+name
+Used to give a name to the control which is sent to the server to be recognized and get the value.
+value
+This can be used to provide an initial value inside the control.
+size
+Allows to specify the width of the text-input control in terms of characters.
+maxlength
+Allows to specify the maximum number of characters a user can enter into the text box.
+This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTML <input>tag but type attribute is set to password.
+Here is a basic example of a single-line password input used to take user password −
+This will produce the following result −
+Following is the list of attributes for <input> tag for creating password field.
+type
+Indicates the type of input control and for password input control it will be set to password.
+name
+Used to give a name to the control which is sent to the server to be recognized and get the value.
+value
+This can be used to provide an initial value inside the control.
+size
+Allows to specify the width of the text-input control in terms of characters.
+maxlength
+Allows to specify the maximum number of characters a user can enter into the text box.
+This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML <textarea> tag.
+Here is a basic example of a multi-line text input used to take item description −
+This will produce the following result −
+Following is the list of attributes for <textarea> tag.
+name
+Used to give a name to the control which is sent to the server to be recognized and get the value.
+rows
+Indicates the number of rows of text area box.
+cols
+Indicates the number of columns of text area box
+Checkboxes are used when more than one option is required to be selected. They are also created using HTML <input> tag but type attribute is set to checkbox..
+Here is an example HTML code for a form with two checkboxes −
+This will produce the following result −
+Following is the list of attributes for <checkbox> tag.
+type
+Indicates the type of input control and for checkbox input control it will be set to checkbox..
+name
+Used to give a name to the control which is sent to the server to be recognized and get the value.
+value
+The value that will be used if the checkbox is selected.
+checked
+Set to checked if you want to select it by default.
+Radio buttons are used when out of many options, just one option is required to be selected. They are also created using HTML <input> tag but type attribute is set to radio.
+Here is example HTML code for a form with two radio buttons −
+This will produce the following result −
+Following is the list of attributes for radio button.
+type
+Indicates the type of input control and for checkbox input control it will be set to radio.
+name
+Used to give a name to the control which is sent to the server to be recognized and get the value.
+value
+The value that will be used if the radio box is selected.
+checked
+Set to checked if you want to select it by default.
+A select box, also called drop down box which provides option to list down various options in the form of drop down list, from where a user can select one or more options.
+Here is example HTML code for a form with one drop down box
+This will produce the following result −
+Following is the list of important attributes of <select> tag −
+name
+Used to give a name to the control which is sent to the server to be recognized and get the value.
+size
+This can be used to present a scrolling list box.
+multiple
+If set to "multiple" then allows a user to select multiple items from the menu.
+Following is the list of important attributes of <option> tag −
+value
+The value that will be used if an option in the select box box is selected.
+selected
+Specifies that this option should be the initially selected value when the page loads.
+label
+An alternative way of labeling options
+If you want to allow a user to upload a file to your web site, you will need to use a file upload box, also known as a file select box. This is also created using the <input> element but type attribute is set to file.
+Here is example HTML code for a form with one file upload box −
+This will produce the following result −
+Following is the list of important attributes of file upload box −
+name
+Used to give a name to the control which is sent to the server to be recognized and get the value.
+accept
+Specifies the types of files that the server accepts.
+There are various ways in HTML to create clickable buttons. You can also create a clickable button using <input>tag by setting its type attribute to button. The type attribute can take the following values −
+submit
+This creates a button that automatically submits a form.
+reset
+This creates a button that automatically resets form controls to their initial values.
+button
+This creates a button that is used to trigger a client-side script when the user clicks that button.
+image
+This creates a clickable button but we can use an image as background of the button.
+Here is example HTML code for a form with three types of buttons −
+This will produce the following result −
+Hidden form controls are used to hide data inside the page which later on can be pushed to the server. This control hides inside the code and does not appear on the actual page. For example, following hidden form is being used to keep current page number. When a user will click next page then the value of hidden control will be sent to the web server and there it will decide which page will be displayed next based on the passed current page.
+Here is example HTML code to show the usage of hidden control −
+This will produce the following result −
+Sometimes you need to add music or video into your web page. The easiest way to add video or sound to your web site is to include the special HTML tag called <embed>. This tag causes the browser itself to include controls for the multimedia automatically provided browser supports <embed> tag and given media type.
+You can also include a <noembed> tag for the browsers which don't recognize the <embed> tag. You could, for example, use <embed> to display a movie of your choice, and <noembed> to display a single JPG image if browser does not support <embed> tag.
+Here is a simple example to play an embedded midi file −
+Following is the list of important attributes which can be used with <embed> tag.
+Note −The align and autostart attributes deprecated in HTML5. Do not use these attributes.
+align
+Determines how to align the object. It can be set to either center, left or right.
+autostart
+This boolean attribute indicates if the media should start automatically. You can set it either true or false.
+loop
+Specifies if the sound should be played continuously (set loop to true), a certain number of times (a positive value) or not at all (false)
+playcount
+Specifies the number of times to play the sound. This is alternate option for loop if you are usiong IE.
+hidden
+Specifies if the multimedia object should be shown on the page. A false value means no and true values means yes.
+width
+Width of the object in pixels
+height
+Height of the object in pixels
+name
+A name used to reference the object.
+src
+URL of the object to be embedded.
+volume
+Controls volume of the sound. Can be from 0 (off) to 100 (full volume).
+You can use various media types like Flash movies (.swf), AVI's (.avi), and MOV's (.mov) file types inside embed tag.
+.swf files − are the file types created by Macromedia's Flash program.
+.wmv files − are Microsoft's Window's Media Video file types.
+.mov files − are Apple's Quick Time Movie format.
+.mpeg files − are movie files created by the Moving Pictures Expert Group.
+This will produce the following result −
+You can use HTML <bgsound> tag to play a soundtrack in the background of your webpage. This tag is supported by Internet Explorer only and most of the other browsers ignore this tag. It downloads and plays an audio file when the host document is first downloaded by the user and displayed. The background sound file also will replay whenever the user refreshes the browser.
+Note − The bgsound tag is deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use HTML5 tag audio for adding sound. But still for learning purpose, this chapter will explain bgsound tag in detail.
+This tag is having only two attributes loop and src. Both these attributes have same meaning as explained above.
+Here is a simple example to play a small midi file −
+This will produce the blank screen. This tag does not display any component and remains hidden.
+Internet Explorer can also handle only three different sound format files − wav, the native format for PCs; au, the native format for most Unix workstations; and MIDI, a universal music-encoding scheme.
+HTML 4 introduces the <object> element, which offers an all-purpose solution to generic object inclusion. The <object> element allows HTML authors to specify everything required by an object for its presentation by a user agent.
+Here are a few examples −
+You can embed an HTML document in an HTML document itself as follows −
+Here alt attribute will come into picture if browser does not support object tag.
+You can embed a PDF document in an HTML document as follows −
+You can specify some parameters related to the document with the <param> tag. Here is an example to embed a wav file −
+You can add a flash document as follows −
+You can add a java applet into HTML document as follows −
+The classid attribute identifies which version of Java Plug-in to use. You can use the optional codebase attribute to specify if and how to download the JRE.
+An HTML marquee is a scrolling piece of text displayed either horizontally across or vertically down your webpage depending on the settings. This is created by using HTML <marquees> tag.
+Note − The <marquee> tag deprecated in HTML5. Do not use this element, instead you can use JavaScript and CSS to create such effects.
+A simple syntax to use HTML <marquee> tag is as follows −
+Following is the list of important attributes which can be used with <marquee> tag.
+width
+This specifies the width of the marquee. This can be a value like 10 or 20% etc.
+height
+This specifies the height of the marquee. This can be a value like 10 or 20% etc.
+direction
+This specifies the direction in which marquee should scroll. This can be a value like up, down, left or right.
+behavior
+This specifies the type of scrolling of the marquee. This can have a value like scroll, slide and alternate.
+scrolldelay
+This specifies how long to delay between each jump. This will have a value like 10 etc.
+scrollamount
+This specifies the speed of marquee text. This can have a value like 10 etc.
+loop
+This specifies how many times to loop. The default value is INFINITE, which means that the marquee loops endlessly.
+bgcolor
+This specifies background color in terms of color name or color hex value.
+hspace
+This specifies horizontal space around the marquee. This can be a value like 10 or 20% etc.
+vspace
+This specifies vertical space around the marquee. This can be a value like 10 or 20% etc.
+Below are few examples to demonstrate the usage of marquee tag.
+This will produce the following result −
+This will produce the following result −
+This will produce the following result −
+This will produce the following result −
+We have learnt that a typical HTML document will have following structure −
+This chapter will give a little more detail about header part which is represented by HTML <head> tag. The <head> tag is a container of various important tags like <title>, <meta>, <link>, <base>, <style>, <script>, and <noscript> tags.
+The HTML <title> tag is used for specifying the title of the HTML document. Following is an example to give a title to an HTML document −
+This will produce the following result −
+The HTML <meta> tag is used to provide metadata about the HTML document which includes information about page expiry, page author, list of keywords, page description etc.
+Following are few of the important usages of <meta> tag inside an HTML document −
+This will produce the following result −
+The HTML <base> tag is used for specifying the base URL for all relative URLs in a page, which means all the other URLs will be concatenated into base URL while locating for the given item.
+For example, all the given pages and images will be searched after prefixing the given URLs with base URL http://www.tutorialspoint.com/ directory −
+This will produce the following result −
+But if you change base URL to something else, for example, if base URL is http://www.tutorialspoint.com/home then image and other given links will become like http://www.tutorialspoint.com/home/images/logo.png and http://www.tutorialspoint.com/html/index.htm
+The HTML <link> tag is used to specify relationships between the current document and external resource. Following is an example to link an external style sheet file available in css sub-directory within web root −
+This will produce the following result −
+The HTML <style> tag is used to specify style sheet for the current HTML document. Following is an example to define few style sheet rules inside <style> tag −
+This will produce the following result −
+Note − To learn about how Cascading Style Sheet works, kindly check a separate tutorial available at css
+The HTML <script> tag is used to include either external script file or to define internal script for the HTML document. Following is an example where we are using JavaScript to define a simple JavaScript function −
+This will produce the following result, where you can try to click on the given button −
+Note − To learn about how JavaScript works, kindly check a separate tutorial available at javascript
+Cascading Style Sheets (CSS) describe how documents are presented on screens, in print, or perhaps how they are pronounced. W3C has actively promoted the use of style sheets on the Web since the consortium was founded in 1994.
+Cascading Style Sheets (CSS) provide easy and effective alternatives to specify various attributes for the HTML tags. Using CSS, you can specify a number of style properties for a given HTML element. Each property has a name and a value, separated by a colon (:). Each property declaration is separated by a semi-colon (;).
+First let's consider an example of HTML document which makes use of <font> tag and associated attributes to specify text color and font size −
+Note − The font tag deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use CSS styles to manipulate your fonts. But still for learning purpose, this chapter will work with an example using the font tag.
+We can re-write above example with the help of Style Sheet as follows −
+This will produce the following result −
+You can use CSS in three ways in your HTML document −
+External Style Sheet − Define style sheet rules in a separate .css file and then include that file in your HTML document using HTML <link> tag.
+Internal Style Sheet − Define style sheet rules in header section of the HTML document using <style> tag.
+Inline Style Sheet − Define style sheet rules directly along-with the HTML elements using style attribute.
+Let's see all the three cases one by one with the help of suitable examples.
+If you need to use your style sheet to various pages, then its always recommended to define a common style sheet in a separate file. A cascading style sheet file will have extension as .css and it will be included in HTML files using <link> tag.
+Consider we define a style sheet file style.css which has following rules −
+Here we defined three CSS rules which will be applicable to three different classes defined for the HTML tags. I suggest you should not bother about how these rules are being defined because you will learn them while studying CSS. Now let's make use of the above external CSS file in our following HTML document −
+This will produce the following result −
+If you want to apply Style Sheet rules to a single document only, then you can include those rules in header section of the HTML document using <style> tag.
+Rules defined in internal style sheet overrides the rules defined in an external CSS file.
+Let's re-write above example once again, but here we will write style sheet rules in the same HTML document using <style> tag −
+This will produce the following result −
+You can apply style sheet rules directly to any HTML element using style attribute of the relevant tag. This should be done only when you are interested to make a particular change in any HTML element only.
+Rules defined inline with the element overrides the rules defined in an external CSS file as well as the rules defined in <style> element.
+Let's re-write above example once again, but here we will write style sheet rules along with the HTML elements using style attribute of those elements.
+This will produce the following result −
+A script is a small piece of program that can add interactivity to your website. For example, a script could generate a pop-up alert box message, or provide a dropdown menu. This script could be written using JavaScript or VBScript.
+You can write various small functions, called event handlers using any of the scripting language and then you can trigger those functions using HTML attributes.
+Now-a-days, only JavaScript and associated frameworks are being used by most of the web developers, VBScript is not even supported by various major browsers.
+You can keep JavaScript code in a separate file and then include it wherever it's needed, or you can define functionality inside HTML document itself. Let's see both the cases one by one with suitable examples.
+If you are going to define a functionality which will be used in various HTML documents then it's better to keep that functionality in a separate JavaScript file and then include that file in your HTML documents. A JavaScript file will have extension as .js and it will be included in HTML files using <script> tag.
+Consider we define a small function using JavaScript in script.js which has following code −
+Now let's make use of the above external JavaScript file in our following HTML document −
+This will produce the following result, where you can try to click on the given button −
+You can write your script code directly into your HTML document. Usually we keep script code in header of the document using <script> tag, otherwise there is no restriction and you can put your source code anywhere in the document but inside <script> tag.
+This will produce the following result, where you can try to click on the given button −
+Event handlers are nothing but simply defined functions which can be called against any mouse or keyboard event. You can define your business logic inside your event handler which can vary from a single to 1000s of line code.
+Following example explains how to write an event handler. Let's write one simple function EventHandler() in the header of the document. We will call this function when any user brings mouse over a paragraph.
+Now This will produce the following result. Bring your mouse over this line and see the result −
+Although most (if not all) browsers these days support JavaScript, but still some older browsers don't. If a browser doesn't support JavaScript, instead of running your script, it would display the code to the user. To prevent this, you can simply place HTML comments around the script as shown below.
+You can also provide alternative info to the users whose browsers don't support scripts and for those users who have disabled script option their browsers. You can do this using the <noscript> tag.
+There may be a situation when you will include multiple script files and ultimately using multiple <script> tags. You can specify a default scripting language for all your script tags. This saves you from specifying the language every time you use a script tag within the page. Below is the example −
+Note that you can still override the default by specifying a language within the script tag.
+A webpage layout is very important to give better look to your website. It takes considerable time to design a website's layout with great look and feel.
+Now-a-days, all modern websites are using CSS and JavaScript based framework to come up with responsive and dynamic websites but you can create a good layout using simple HTML tables or division tags in combination with other formatting tags. This chapter will give you few examples on how to create a simple but working layout for your webpage using pure HTML and its attributes.
+The simplest and most popular way of creating layouts is using HTML <table> tag. These tables are arranged in columns and rows, so you can utilize these rows and columns in whatever way you like.
+For example, the following HTML layout example is achieved using a table with 3 rows and 2 columns but the header and footer column spans both columns using the colspan attribute −
+This will produce the following result −
+You can design your webpage to put your web content in multiple pages. You can keep your content in middle column and you can use left column to use menu and right column can be used to put advertisement or some other stuff. This layout will be very similar to what we have at our website tutorialspoint.com.
+Here is an example to create three column layout −
+This will produce the following result −
+The <div> element is a block level element used for grouping HTML elements. While the <div> tag is a block-level element, the HTML <span> element is used for grouping elements at an inline level.
+Although we can achieve pretty nice layouts with HTML tables, but tables weren't really designed as a layout tool. Tables are more suited to presenting tabular data.
+Note − This example makes use of Cascading Style Sheet (CSS), so before understanding this example you need to have a better understanding on how CSS works.
+Here we will try to achieve same result using <div> tag along with CSS, whatever you have achieved using <table> tag in previous example.
+This will produce the following result −
+You can create better layout using DIV, SPAN along with CSS.
