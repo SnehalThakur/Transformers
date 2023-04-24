@@ -2,6 +2,7 @@ import textwrap
 import streamlit as st
 from main import *
 
+
 # import SQLiteDB as dbHandler
 
 
@@ -30,16 +31,30 @@ def main():
     topic = st.selectbox("Select the topic for MCQ Generation: ",
                          ["Data Science", 'PYTHON', 'HTML', 'CSS', 'DataStructures', 'CPP'])
 
+    level = st.selectbox("Select the difficulty level: ",
+                         ["Easy, Medium and Hard", "Hard", 'Medium', 'Easy'])
+
+    numberOfQuestions = 20
+
+    if level != "Easy, Medium and Hard":
+        numberOfQuestions = st.slider('Select the number of questions:', 1, 20, 5)
+
     # print the selected topic
     st.write("Your topic is: ", topic)
+    st.write("Level is: ", level)
 
-    prompt = "Generate 20 Multiple Choice Questions on " + topic + " with correct answers and wrong answers"
-
+    if level == "Easy, Medium and Hard":
+        prompt = "Generate " + str(
+            numberOfQuestions) + " " + level + "Multiple Choice Questions on " + topic + " with correct answers and wrong answers and difficulty level of each question"
+    else:
+        prompt = "Generate " + str(
+            numberOfQuestions) + " " + level + "Multiple Choice Questions on " + topic + " with correct answers and wrong answers"
 
     # retrivedDataFromDB = dbHandler.retrieveCorpusDataWithItemName(topic)[0][2]
     # print(dbHandler.retrieveCorpusDataWithItemName(topic))
     if st.button("Generate"):
         response = print_chatgpt_response(prompt)
+
         st.text_area(label=topic, value=response, height=700)
 
         # questions = MCQ_Generator.generate_mcq_questions(retrivedDataFromDB, 10)
